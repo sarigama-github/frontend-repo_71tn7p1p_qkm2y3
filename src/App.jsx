@@ -1,28 +1,35 @@
-import { useState } from 'react'
+import Hero from './components/Hero';
+import Curriculum from './components/Curriculum';
+import About from './components/About';
+import CTA from './components/CTA';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
+    <div className="min-h-screen w-full bg-white text-slate-900">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/40 bg-white/60 backdrop-blur-md">
+        <div className="container mx-auto px-6 h-16 flex items-center justify-between">
+          <a href="#" className="font-extrabold tracking-tight text-xl">Hesham Hamdy</a>
+          <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
+            <a href="#curriculum" className="hover:text-slate-900">Curriculum</a>
+            <a href="#about" className="hover:text-slate-900">About</a>
+            <a href="#enroll" className="hover:text-slate-900">Enroll</a>
+          </nav>
+          <a href="#enroll" className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800">Apply</a>
         </div>
-      </div>
+      </header>
+
+      <main className="pt-16">
+        <Hero />
+        <Curriculum />
+        <About />
+        <CTA />
+      </main>
+
+      <footer className="py-10 text-center text-sm text-slate-500 border-t">
+        © {new Date().getFullYear()} Hesham Hamdy — Media Buying Mastery
+      </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
