@@ -3,6 +3,7 @@ import Curriculum from './components/Curriculum';
 import About from './components/About';
 import CTA from './components/CTA';
 import LeadForm from './components/LeadForm';
+import AdminPanel from './components/AdminPanel';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <a href="#curriculum" className="hover:text-slate-900">Curriculum</a>
             <a href="#about" className="hover:text-slate-900">About</a>
             <a href="#apply" className="hover:text-slate-900">Enroll</a>
+            <a href="#admin" className="hover:text-slate-900">Admin</a>
           </nav>
           <a href="#apply" className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800">Apply</a>
         </div>
@@ -25,6 +27,7 @@ function App() {
         <About />
         <CTA />
         <LeadForm />
+        <AdminPanel />
       </main>
 
       <footer className="py-10 text-center text-sm text-slate-500 border-t">
