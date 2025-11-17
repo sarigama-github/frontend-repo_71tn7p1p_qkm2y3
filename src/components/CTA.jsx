@@ -27,12 +27,10 @@ export default function CTA() {
           </div>
 
           <a
-            href="https://forms.gle/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#apply"
             className="mt-8 inline-flex items-center gap-2 rounded-xl bg-blue-600 text-white px-6 py-3 font-semibold shadow-lg shadow-blue-600/20 hover:bg-blue-700 transition"
           >
-            Apply Now
+            Enroll Now
             <ArrowRight className="h-4 w-4" />
           </a>
 

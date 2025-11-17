@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import Curriculum from './components/Curriculum';
 import About from './components/About';
 import CTA from './components/CTA';
+import LeadForm from './components/LeadForm';
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
           <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
             <a href="#curriculum" className="hover:text-slate-900">Curriculum</a>
             <a href="#about" className="hover:text-slate-900">About</a>
-            <a href="#enroll" className="hover:text-slate-900">Enroll</a>
+            <a href="#apply" className="hover:text-slate-900">Enroll</a>
           </nav>
-          <a href="#enroll" className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800">Apply</a>
+          <a href="#apply" className="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800">Apply</a>
         </div>
       </header>
 
@@ -23,6 +24,7 @@ function App() {
         <Curriculum />
         <About />
         <CTA />
+        <LeadForm />
       </main>
 
       <footer className="py-10 text-center text-sm text-slate-500 border-t">
